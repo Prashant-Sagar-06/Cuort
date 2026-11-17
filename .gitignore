@@ -1,0 +1,23 @@
+# Environments & Secrets
+.env
+*.env
+.venv/
+env/
+venv/
+
+# Node
+node_modules/
+dist/
+.npm
+
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+*.sqlite3
+
+# OS / Editor
+.DS_Store
+Thumbs.db
+.vscode/
+.idea/

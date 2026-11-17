@@ -1,0 +1,16 @@
+services:
+  db:
+    image: pgvector/pgvector:pg16
+    container_name: cuort-db
+    restart: always
+    environment:
+      POSTGRES_USER: cuort
+      POSTGRES_PASSWORD: cuort_secret_password
+      POSTGRES_DB: cuort_db
+    ports:
+      - "5432:5432"
+    volumes:
+      - cuort_pgdata:/var/lib/postgresql/data
+
+volumes:
+  cuort_pgdata:
